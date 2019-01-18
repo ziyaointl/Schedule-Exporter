@@ -20,7 +20,7 @@ Chrome web store link coming soon.
 
       ![docs/usage-2.png](docs/usage-2.png)
 
-3. Click on the extension icon in the upper right Chrome menu. You should get a file named calendar.ics. Then, you can import this ics file to whatever calendar platform you desire. Classes automatically repeat weekly starting from the first day of the current semester!
+3. Click on the extension icon in the upper right Chrome menu. (You might have to wait a few seconds for the page to fully load before click on the icon). You should get a file named calendar.ics. Then, you can import this ics file to whatever calendar platform you desire. Classes automatically repeat weekly starting from the first day of the current semester!
 
       ![docs/usage-3.png](docs/usage-3.png)
 

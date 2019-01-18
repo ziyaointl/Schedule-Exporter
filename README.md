@@ -6,9 +6,9 @@ Note: This is not a novel idea and a number of people have done something simila
 
 ### Installation
 
-Download the repo as a zip file. Go to chrome://extensions, enable developer mode, select import, and select the folder extracted from the zip file.
+[Chrome Web Store](https://chrome.google.com/webstore/detail/berkeley-schedule-exporte/adnjnncenfmhbfaggmchmfelhbafbkmn?hl=en)
 
-Chrome web store link coming soon.
+If you want to install from source, download the repo as a zip file. Go to chrome://extensions, enable developer mode, select import, and select the folder extracted from the zip file.
 
 ### Usage
 

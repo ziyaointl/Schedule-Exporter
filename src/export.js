@@ -25,19 +25,20 @@ var addToCalendar = (e) => {
     var courseObject = e.attributes;
     if (courseObject.meetings.length > 0 && checked(e)) {
         var name = courseObject.subjectId + ' ' + courseObject.course + ' ' + courseObject.component;
-        var meeting = courseObject.meetings[0]
-        var location = meeting.building;
-        var days = [];
-        [...meeting.daysRaw].forEach(d => days.push(daysMap[d]));
-        var rrule = {
-            freq: "WEEKLY",
-            byday: days,
-            interval: 1
-        };
-        var startDate = meeting.startDate.replace("Z", "");
-        startDate = setTime(startDate, meeting.startTime);
-        endDate = setTime(startDate, meeting.endTime);
-        cal.addEvent(name, "", location, startDate, endDate, rrule);
+        courseObject.meetings.forEach( meeting => {
+            var location = meeting.building;
+            var days = [];
+            [...meeting.daysRaw].forEach(d => days.push(daysMap[d]));
+            var rrule = {
+                freq: "WEEKLY",
+                byday: days,
+                interval: 1
+            };
+            var startDate = meeting.startDate.replace("Z", "");
+            startDate = setTime(startDate, meeting.startTime);
+            endDate = setTime(startDate, meeting.endTime);
+            cal.addEvent(name, "", location, startDate, endDate, rrule);
+        });
     }
 };
 Scheduler.Data.CurrentSections.models.forEach(addToCalendar);

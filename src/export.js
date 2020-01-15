@@ -1,7 +1,8 @@
 var courseIDs = new Set();
-document.querySelectorAll(".section-item").forEach((e) => {
-    if (e.querySelector(".select").checked) {
-        courseIDs.add(e.getAttribute("data-id"));
+document.querySelectorAll("tbody input").forEach((e) => {
+    let reg = /checkbox_(\d+)/
+    if (e.checked) {
+        courseIDs.add(reg.exec(e.id)[1]);
     }
 });
 
@@ -22,7 +23,7 @@ var daysMap = {
     U: "SU"
 }
 var addToCalendar = (e) => {
-    var courseObject = e.attributes;
+    let courseObject = e;
     if (courseObject.meetings.length > 0 && checked(e)) {
         var name = courseObject.subjectId + ' ' + courseObject.course + ' ' + courseObject.component;
         courseObject.meetings.forEach( meeting => {
@@ -41,7 +42,7 @@ var addToCalendar = (e) => {
         });
     }
 };
-Scheduler.Data.CurrentSections.models.forEach(addToCalendar);
-Scheduler.Data.CartSections.models.forEach(addToCalendar);
+Scheduler.reduxStore.getState().cartSections.forEach(addToCalendar);
+Scheduler.reduxStore.getState().registeredSections.forEach(addToCalendar);
 
 cal.download();

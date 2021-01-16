@@ -63,7 +63,6 @@ function addToCalendar(term, c) {
         return d
     }
     let firstDay = earliestDayAfter(new Date(semesters[term].startDate), c.days)
-    console.log(firstDay)
     cal.addEvent(c.name, "", "", setTime(firstDay, c.startTime), setTime(firstDay, c.endTime), rrule)
 }
 

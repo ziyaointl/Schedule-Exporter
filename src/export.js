@@ -99,7 +99,7 @@ function parseTable(table) {
             let matches = [...target.matchAll(/> (.*) - (.*) -/g)][0]
             startTime = matches[1], endTime = matches[2]
         } catch (error) {
-            console.warn("Cannot find times for" + name + ". Does this class have missing fields?")
+            console.warn("Cannot find times for " + name + ". Does this class have missing fields?")
             console.warn(error);
             return null
         }

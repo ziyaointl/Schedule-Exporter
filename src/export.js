@@ -95,9 +95,9 @@ function parseTable(table) {
         let startTime, endTime
         try {
             let target = cols[colIndex('Day(s) & Location(s)')].firstElementChild.firstElementChild.firstElementChild.innerHTML
-            target = target.replace(' - Internet/Online', '')
-            let matches = [...target.matchAll(/> (.*) - (.*)$/g)][0]
-            startTime = matches[1], endTime = matches[2]
+            let matches = [...target.matchAll(/> (.*)$/g)][0]
+            let substrs = matches[1].split(' - ')
+            startTime = substrs[0], endTime = substrs[1]
         } catch (error) {
             console.warn("Cannot find times for " + name + ". Does this class have missing fields?")
             console.warn(error);

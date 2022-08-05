@@ -1,6 +1,6 @@
 function injectScript(script) {
     var s = document.createElement('script');
-    s.src = chrome.extension.getURL(script);
+    s.src = chrome.runtime.getURL(script);
     s.onload = function() {
         this.remove();
     };

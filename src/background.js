@@ -15,8 +15,9 @@ chrome.runtime.onInstalled.addListener(function() {
     });
 });
 
-chrome.pageAction.onClicked.addListener(function(tab) {
-    chrome.tabs.executeScript({
-        file: 'src/main.js'
+chrome.action.onClicked.addListener(function(tab) {
+    chrome.scripting.executeScript({
+        target: {tabId: tab.id, allFrames: true},
+        files: ['src/main.js']
     });
 });

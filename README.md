@@ -12,7 +12,7 @@ If you want to install from source, download the repo as a zip file. Go to chrom
 
 ### Usage
 
-1. Go to CalCentral, My Academics. Select Organize and preview your upcoming semester.
+1. Go to CalCentral, My Academics. Select Schedule Planner.
 
    ![docs/usage-1.png](docs/usage-1.png)
 

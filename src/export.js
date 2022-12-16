@@ -28,7 +28,11 @@ var semesters = {
     "2022 Fall": {
         startDate: "08/24/2022",
         endDate: "12/09/2022"
-    }
+    },
+    "2023 Spring": {
+        startDate: "01/10/2023",
+        endDate: "05/12/2023"
+    },
 }
 
 Date.prototype.addDays = function(days) {

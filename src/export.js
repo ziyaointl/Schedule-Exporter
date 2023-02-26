@@ -14,8 +14,8 @@ var semesters = {
         endDate: "12/09/2022"
     },
     "2023 Spring": {
-        startDate: "01/10/2023",
-        endDate: "05/12/2023"
+        startDate: "01/17/2023",
+        endDate: "04/28/2023"
     },
     "2023 Summer": {
         startDate: "05/22/2023",

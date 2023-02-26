@@ -1,22 +1,6 @@
 var cal = ics();
 
 var semesters = {
-    "2020 Fall": {
-        startDate: "08/26/2020",
-        endDate: "12/11/2020",
-    },
-    "2021 Spring": {
-        startDate: "01/19/2021",
-        endDate: "05/07/2021",
-    },
-    "2021 Summer": {
-        startDate: "05/24/2021",
-        endDate: "08/13/2021",
-    },
-    "2021 Fall": {
-        startDate: "08/25/2021",
-        endDate: "12/10/2021",
-    },
     "2022 Spring": {
         startDate: "01/18/2022",
         endDate: "05/06/2022",
@@ -33,6 +17,82 @@ var semesters = {
         startDate: "01/10/2023",
         endDate: "05/12/2023"
     },
+    "2023 Summer": {
+        startDate: "05/22/2023",
+        endDate: "08/11/2023"
+    },
+    "2023 Fall": {
+        startDate: "08/23/2023",
+        endDate: "12/08/2023"
+    },
+    "2024 Spring": {
+        startDate: "01/16/2024",
+        endDate: "05/03/2024"
+    },
+    "2024 Summer": {
+        startDate: "05/20/2024",
+        endDate: "08/09/2024"
+    },
+    "2024 Fall": {
+        startDate: "08/28/2024",
+        endDate: "12/13/2024"
+    },
+    "2025 Spring": {
+        startDate: "01/21/2025",
+        endDate: "05/09/2025"
+    },
+    "2025 Summer": {
+        startDate: "05/27/2025",
+        endDate: "08/15/2025"
+    },
+    "2025 Fall": {
+        startDate: "08/27/2025",
+        endDate: "12/12/2025",
+    },
+    "2026 Spring": {
+        startDate: "01/20/2026",
+        endDate: "05/08/2026",
+    },
+    "2026 Summer": {
+        startDate: "05/26/2026",
+        endDate: "08/14/2026"
+    },
+    "2026 Fall": {
+        startDate: "08/26/2026",
+        endDate: "12/11/2026"
+    },
+    "2027 Spring": {
+        startDate: "01/19/2027",
+        endDate: "05/07/2027"
+    },
+    "2027 Summer": {
+        startDate: "05/24/2027",
+        endDate: "08/13/2027"
+    },
+    "2027 Fall": {
+        startDate: "08/25/2027",
+        endDate: "12/10/2027"
+    },
+    "2028 Spring": {
+        startDate: "01/18/2028",
+        endDate: "05/05/2028"
+    },
+    "2028 Summer": {
+        startDate: "05/22/2028",
+        endDate: "08/11/2028"
+    },
+    "2028 Fall": {
+        startDate: "08/23/2028",
+        endDate: "12/08/2028"
+    },
+    "2029 Spring": {
+        startDate: "01/16/2029",
+        endDate: "05/04/2029"
+    },
+    "2029 Summer": {
+        startDate: "05/21/2029",
+        endDate: "08/10/2029"
+    }
 }
 
 Date.prototype.addDays = function(days) {
